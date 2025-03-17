@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"
+	th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+<head>
+
+<title>profile Page</title>
+</head>
+<body>
+<div id="content" >
+<!-- If user logged in -->
+	<div th:if="${loggedInUser}">
+	<div data-th-replace="~{user/sidebar :: sidebar}"></div>
+	</div>
+		<div class="sm:pl-64 pt-20" style="height: 1000px">
+		<h1>Welcome to home page</h1>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore
+		assumenda rerum harum mollitia incidunt nesciunt dignissimos esse
+		dicta reprehenderit quam, quisquam aspernatur enim consequatur
+		accusamus, minima alias odit ducimus.
+	</div>
+	
+</div>
+
+<script>
+      console.log("this is user profile page");
+    </script>
+</body>
+</html>
