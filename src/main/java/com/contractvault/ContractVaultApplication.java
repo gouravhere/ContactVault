@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-//main
+//main controller new
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.contractvault",
 	    "com.contractvault.services",
